@@ -6,13 +6,13 @@ class Project1 extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Enter Something Below"
+      name: "Enter Something Below",
     };
   }
 
   onNameSubmit = (name) => {
     this.setState({
-      name: name
+      name: name,
     });
   };
 

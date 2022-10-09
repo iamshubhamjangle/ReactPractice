@@ -13,8 +13,8 @@ const Project4 = () => {
         "https://dummyjson.com/image/i/products/1/2.jpg",
         "https://dummyjson.com/image/i/products/1/3.jpg",
         "https://dummyjson.com/image/i/products/1/4.jpg",
-        "https://dummyjson.com/image/i/products/1/thumbnail.jpg"
-      ]
+        "https://dummyjson.com/image/i/products/1/thumbnail.jpg",
+      ],
     },
     {
       id: 2,
@@ -26,8 +26,8 @@ const Project4 = () => {
         "https://dummyjson.com/image/i/products/2/1.jpg",
         "https://dummyjson.com/image/i/products/2/2.jpg",
         "https://dummyjson.com/image/i/products/2/3.jpg",
-        "https://dummyjson.com/image/i/products/2/thumbnail.jpg"
-      ]
+        "https://dummyjson.com/image/i/products/2/thumbnail.jpg",
+      ],
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const Project4 = () => {
       description:
         "Samsung's new variant which goes beyond Galaxy to the Universe",
       price: 1249,
-      images: ["https://dummyjson.com/image/i/products/3/1.jpg"]
+      images: ["https://dummyjson.com/image/i/products/3/1.jpg"],
     },
     {
       id: 4,
@@ -47,8 +47,8 @@ const Project4 = () => {
         "https://dummyjson.com/image/i/products/4/2.jpg",
         "https://dummyjson.com/image/i/products/4/3.jpg",
         "https://dummyjson.com/image/i/products/4/4.jpg",
-        "https://dummyjson.com/image/i/products/4/thumbnail.jpg"
-      ]
+        "https://dummyjson.com/image/i/products/4/thumbnail.jpg",
+      ],
     },
     {
       id: 5,
@@ -59,9 +59,9 @@ const Project4 = () => {
       images: [
         "https://dummyjson.com/image/i/products/5/1.jpg",
         "https://dummyjson.com/image/i/products/5/2.jpg",
-        "https://dummyjson.com/image/i/products/5/3.jpg"
-      ]
-    }
+        "https://dummyjson.com/image/i/products/5/3.jpg",
+      ],
+    },
   ];
 
   return (
@@ -73,8 +73,8 @@ const Project4 = () => {
             <h5 className="my0">{item.title}</h5>
             <p className="my0">{item.description}</p>
             <p className="my0">price: ₹{item.price}</p>
-            {item.images.map((i) => (
-              <img className="product-img" src={i} alt=""></img>
+            {item.images.map((i, idx) => (
+              <img key={idx} className="product-img" src={i} alt=""></img>
             ))}
           </div>
         );

@@ -10,12 +10,13 @@ import Project7 from "./project7";
 import Project8 from "./project8";
 import Project9 from "./project9";
 import Project10 from "./project10";
+import Project11 from "./project11/project11";
 import "./style.css";
 
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <Project1 />
         <Project2 />
         <Project3 />
@@ -26,7 +27,8 @@ class App extends React.Component {
         <Project8 />
         <Project9 />
         <Project10 />
-      </>
+        <Project11 />
+      </div>
     );
   }
 }
