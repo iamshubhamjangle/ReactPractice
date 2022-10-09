@@ -6,13 +6,13 @@
  */
 import React from "react";
 
-const withCounter = (OriginalComponent) => {
+const withCounter = (OriginalComponent, step) => {
   const newComponent = (props) => {
     // console.log(props);
     const [count, setCount] = React.useState(0);
 
     const incrementCounter = () => {
-      setCount(count + 1);
+      setCount(count + step);
     };
 
     return (

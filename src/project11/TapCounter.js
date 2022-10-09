@@ -14,4 +14,4 @@ const TapCounter = (props) => {
   );
 };
 
-export default withCounter(TapCounter);
+export default withCounter(TapCounter, 2);

@@ -15,4 +15,4 @@ const TouchCounter = (props) => {
   );
 };
 
-export default withCounter(TouchCounter);
+export default withCounter(TouchCounter, 5);
