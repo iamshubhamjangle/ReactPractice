@@ -9,7 +9,7 @@ const Counter = () => {
   return (
     <div className="project">
       <h3>Project 11: Counter - The Higher Order Component</h3>
-      <TapCounter />
+      <TapCounter name="Shubham" />
       <TouchCounter />
     </div>
   );
