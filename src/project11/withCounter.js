@@ -16,11 +16,14 @@ const withCounter = (OriginalComponent, step) => {
     };
 
     return (
-      <OriginalComponent
-        incrementCounter={incrementCounter}
-        count={count}
-        {...props}
-      />
+      <div>
+        <p>Remixed </p>
+        <OriginalComponent
+          incrementCounter={incrementCounter}
+          count={count}
+          {...props}
+        />
+      </div>
     );
   };
   return newComponent;
