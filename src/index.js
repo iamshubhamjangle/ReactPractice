@@ -12,6 +12,7 @@ import Project9 from "./project9";
 import Project10 from "./project10";
 import Project11 from "./project11/project11";
 import Project12 from "./project12";
+import Project13 from "./project13";
 import "./style.css";
 
 class App extends React.Component {
@@ -30,6 +31,7 @@ class App extends React.Component {
         <Project10 />
         <Project11 />
         <Project12 />
+        <Project13 />
       </div>
     );
   }
