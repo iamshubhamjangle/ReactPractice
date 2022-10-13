@@ -31,10 +31,16 @@ const Comment = ({
   }
 
   return (
-    <div style={{ paddingLeft: `${paddingLeft}px` }}>
-      <h4 className="my1">{author}</h4>
-      <p className="my0">{timestamp}</p>
-      <p className="my0">{commentText}</p>
+    <div className="my1" style={{ paddingLeft: `${paddingLeft}px` }}>
+      <h4 className="my1" style={{ display: "inline" }}>
+        @{author}
+      </h4>
+      <p className="my0 mx1" style={{ display: "inline", fontSize: "0.8em" }}>
+        {timestamp}
+      </p>
+      <p className="my0" style={{ marginLeft: "1rem" }}>
+        {commentText}
+      </p>
       <form onSubmit={(e) => handleReplySubmit(e)}>
         <input
           type="text"
