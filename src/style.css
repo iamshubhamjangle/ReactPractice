@@ -15,8 +15,18 @@
 }
 
 .my0 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.my1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.my2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .mt1 {
@@ -27,10 +37,34 @@
   margin-right: 10px;
 }
 
-.no-select {
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+/* INPUT FIELDS */
+input,
+textarea,
+select {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: 1px solid lightgray;
+  padding: 8px 12px;
+  margin-right: 5px;
+  margin-top: 5px;
+  min-width: 15em;
+}
+
+/* BUTTON */
+button {
+  border-radius: 0.5em;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid lightgray;
+  border: none;
+}
+
+button:hover,
+button:active {
+  background-color: rgb(241, 241, 241);
+  border: 1.5px solid lightgray;
 }
