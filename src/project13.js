@@ -22,6 +22,10 @@ const Project13 = () => {
     <div className="project">
       <h3>Project 13: Lazy search on input field - Debounce</h3>
       <p>
+        Debounce is useful when we have to trigger something after set Interval
+        - When user stops typing.
+      </p>
+      <p>
         Enter some text below, you will see a console log after a delay for 2
         seconds
       </p>
