@@ -15,13 +15,8 @@ class Project15 extends React.Component {
             const res = {};
             
             function memoise(num) {
-                if (res[num]) {
-                    console.log('memoised')
-                    return res[num];
-                }
-            
-                res[num] = heavyFunction(num);
-                return res[num];
+                if (res[num]) return res[num];
+                return res[num] = heavyFunction(num);;
             }
             `}
         </pre>
@@ -29,9 +24,9 @@ class Project15 extends React.Component {
         <h3>Project 15: Task 2: Infinite currying</h3>
         <pre>
           {`
-            function add(a) {
-                function add(b) {
-                    if(b) return add(a+b);
+            let add = function (a) {
+                return function (b) {
+                    if(b) return fun(a+b);
                     return a;
                 }
             }
